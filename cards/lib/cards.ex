@@ -19,4 +19,19 @@ defmodule Cards do
   def deal(deck, num_of_cards) do
     Enum.split(deck, num_of_cards)
   end
+
+  def save(deck, filename) do
+    binary = :erlang.term_to_binary(deck)
+    File.write(filename, binary)
+  end
+
+  def load(filename) do
+    {status, binary} = File.read(filename)
+
+    case status do
+      :ok -> :erlang.binary_to_term(binary)
+      :error -> "File not found"
+    end
+  end
+
 end
