@@ -19,6 +19,7 @@ defmodule Cards do
   def shuffle(deck) do
    Enum.shuffle(deck)
   end
+
   @doc """
     Determines if a deck contains a given card
 
@@ -46,7 +47,6 @@ defmodule Cards do
       ["Ace of Spades"]
 
   """
-
   def deal(deck, num_of_cards) do
     Enum.split(deck, num_of_cards)
   end

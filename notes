@@ -1,0 +1,12 @@
+Video4 - Mix is used to create projects, compile projects, run tasks and manage dependencies.
+Create a project - mix new [project name]
+
+Video5 - generates project subdirectories. Project name is used to create directory and
+creates a module with the same name. Module is a collection of methods or functions. 
+Run code by typing iex -S mix
+parens after method calls are optional. methods have implicit return like ruby.
+
+Video6 - create a method to generate list of cards. Use [] notation for creating array.
+Within iex - use recompile(). Create deck and test method.
+
+Video7 - 
