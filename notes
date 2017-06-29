@@ -9,4 +9,6 @@ parens after method calls are optional. methods have implicit return like ruby.
 Video6 - create a method to generate list of cards. Use [] notation for creating array.
 Within iex - use recompile(). Create deck and test method.
 
-Video7 - 
+Video7 - In OO style, we would have a deck class, that creates an instance with a collection 
+of cards and methods to access or modify that collection of cards. In a FP approach, we would
+have a Cards Module. 
